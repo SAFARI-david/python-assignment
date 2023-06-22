@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homepage</title>
+     <!-- <link rel="stylesheet" href="../static/css/index.css"> -->
+     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+     <style>
+        #home{
+            background-image: url("{% static 'images/imsges/freelancer-lying-on-sofa-using-600w-2225138025.webp' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .background-section {
+            background-image: url("{% static 'images/imsges/freelancer-lying-on-sofa-using-600w-2225138025.webp' %}");background-image: url("path/to/image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+     </style>
 </head>
 <body>
-    <h>Heading one</h>
+    <nav>
+        <h1>Conference~app</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About as</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+    <section class="background-section">
+        <h1>homepage</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+             Eveniet, laudantium corporis beatae ea, ipsum nobis unde <br>
+             cum voluptatum ut tempora odio, <br>
+            itaque officiis numquam expedita similique ratione <br>
+            saepe aliquam! Molestias?</P>
+    </section>
+    <section>
+        <h1>About us</h1>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Facere sint libero odit beatae deleniti reiciendis ipsam ducimus! <br>
+                Ratione, nihil, repudiandae maxime, <br>
+                ex quam aspernatur mollitia voluptatem nemo recusandae modi cumque.
+            </p>
+
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+                Itaque non sed quaerat, aut atque ullam laborum consequuntur facere minus <br>
+                temporibus eaque iure repellendus, esse soluta <br>
+                odit pariatur beatae possimus officia.
+            </p>
+        </div>
+    </section>
+    <section>
+        <h1>Contact us</h1>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                Illo iure, iusto iste provident molestiae deserunt necessitatibus<br>
+                 eos maxime quam excepturi accusamus dicta accusantium quis, <br>
+                possimus earum doloribus vero molestias totam.
+            </p>
+        </div>
+        <div>
+            <h1>Fill this form</h1>
+            <form action="">
+                <label for="user">Full name:
+                    <input type="text">
+                </label>
+                <label for="message">Tye your comment:
+                    <input type="textarea">
+                </label>
+                <button>
+                    <input type="submit" name="submit">
+                </button>
+
+            </form>
+        </div>
+    </section>
 </body>
 </html>
